@@ -1,0 +1,558 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html , body{
+    width:100%;
+    height:100%;
+    background-color: rgb(0, 0, 0);
+}
+#navbar{
+    padding:10px 20px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    width:100%;
+    height:8%;
+    background-color:black;
+}
+#logo i{
+    color:white;
+    font-size:40px;
+}
+#home{
+    width:3.5vw;
+    height:6.5vh;
+    background-color: rgb(35, 34, 34);
+    text-align: center;
+    padding:8px 0px;
+    border-radius: 100px;
+    transition:0.1s;
+    margin-left: 20px;
+}
+#home:hover{
+    transition:0.1s;
+    background-color: rgb(46, 45, 45);
+    cursor: pointer;
+    width:3.8vw;
+    height:6.8vh;
+}
+#home i{
+    font-size:27px;
+    color:white;
+}
+#search{
+    width:400px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    border:transparent;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(36, 36, 36);
+    transition:0.3s;
+}
+#search:hover{
+    transition:0.3s;
+    background-color: rgb(48, 48, 48);
+}
+#search i{
+    color:white;
+}
+#search input{
+    height:100%;
+    width:70%;
+    color:white;
+    padding:10px 0px;
+    font-size:15px;
+    background-color: transparent;
+    border-left: transparent;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition:0.1s;
+    outline: none;
+    border:none;
+}
+#search input::placeholder{
+    color:rgb(202, 202, 202);
+}
+#searchbar{
+    width:15%;
+    height:100%;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition:0.1s;
+    background: transparent;
+}
+#searchbar i{
+    margin-top: 7px;
+    font-size:28px;
+    color:rgb(182, 179, 179);
+    border-top-left-radius: 10px;
+    transition:0.1s;
+}
+#searchbar i:hover{
+    transition:0.3s;
+    color:white;
+    cursor: pointer;
+}
+#line{
+    width:1px;
+    height:25px;
+    background-color: rgb(175, 175, 175);
+}
+#folder{
+    margin-left: 15px;
+    font-size:28px;
+}
+#folder i{
+    margin-top: 2px;
+    color:rgb(176, 176, 176);
+    transition:0.1s;
+}
+#folder i:hover{
+    transition:0.1s;
+    color:white;
+    cursor: pointer;    
+}
+#info{
+    margin-left:200px;
+    border:2px solid white;
+    width:20%;
+    height:100%;
+    padding:5px 20px;
+    border:transparent;
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+#info a{
+    text-decoration: none;
+    color:rgb(192, 190, 190);
+    font-weight: bold;
+    transition:0.1s;
+    margin-left: 2px;
+}
+#info a:hover{
+    transition:0.1s;
+    font-size:17px;
+    color:white;
+}
+#line2{
+    width:1px;
+    height:25px;
+    background-color: white;
+}
+#install{
+    width:110px;
+    height:100%;
+    color:rgb(192, 190, 190);
+    display: flex;
+    align-items: center;
+    gap:5px;
+    margin-left: 10px;
+    transition:0.1s;
+    font-size:  15px;
+    font-weight: bold;
+}
+#install:hover{
+    transition:0.1s;
+    color:white;
+    font-size:16px;
+    cursor: pointer;
+}
+#signup{
+    color:rgb(192, 190, 190);
+    font-size:14px;
+    font-weight: bold;
+    transition:0.1s;
+}
+#signup:hover{
+    transition:0.1s;
+    color:white;
+    font-size:15px;
+    cursor: pointer;
+}
+#login{
+    color:black;
+    background-color: white;
+    width:100px;
+    height:40px;
+    text-align: center;
+    padding: 12px 10px;
+    font-size:14px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    margin-left: 8px;
+    transition:0.1s;
+}
+#login:hover{
+    transition:0.1s;
+    background-color: rgb(230, 227, 227);
+    width:102px;
+    height:42px;
+    cursor: pointer;
+}
+#sidebar{
+    padding:20px 20px;
+    width:30%;
+    height:90%;
+    background-color: rgb(23, 23, 23);
+    border-radius: 10px;
+}
+#firstside{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+#s1{
+    width:180px;
+    font-size:18px;
+    color:rgb(192, 190, 190);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition:0.2s;
+    margin-left: 10px;
+}
+#s1:hover{
+    transition:0.2s;
+    color:white;
+    cursor: pointer;
+}
+#s1 p{
+    margin-left: 5px;
+    font-size:16px;
+}
+#s1 i{
+    font-size:25px;
+    font-weight: bold;
+}
+#s2{
+    width:30px;
+    height:30px;
+    text-align: center;
+    border-radius: 100px;
+    padding:5px 0px;
+    margin-left: 190px;
+    transition:0.1s;
+}
+#s2:hover{
+    transition:0.1s;
+    color:white;
+    background-color: rgb(37, 37, 37);
+    cursor: pointer;
+}
+#s2 i{
+    font-size:20px;
+    color:rgb(192, 190, 190);
+}
+#secondside{
+    background-color: rgb(38, 37, 37);
+    margin-top: 40px;
+    height:150px;
+    padding:20px 10px;
+    border-radius: 10px;
+    line-height: 25px;
+}
+#secondside h3{
+    color:white;
+    font-size:16px;
+    margin-left:10px;
+}
+#lab{
+    font-size:14px;
+    font-weight: bold;
+    margin-left: 10px;
+    color:rgb(237, 234, 234);
+}
+#secondside button{
+    width:120px;
+    height:30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    border-radius: 20px;
+    border:transparent;
+    transition:0.1s;
+    background-color: white;
+}
+#secondside button:hover{
+    transition:0.1s;
+    background-color: rgb(231, 228, 228);
+    width:122px;
+    height:32px;
+    cursor: pointer;
+}
+#thirdside{
+    background-color: rgb(38, 37, 37);
+    margin-top: 40px;
+    height:150px;
+    padding:20px 10px;
+    border-radius: 10px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+#thirdside h3{
+    color:white;
+    font-size:16px;
+    margin-left:10px;
+}
+#lab{
+    font-size:14px;
+    font-weight: bold;
+    margin-left: 10px;
+    color:rgb(237, 234, 234);
+}
+#thirdside button{
+    width:140px;
+    height:30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    border-radius: 20px;
+    border:transparent;
+    transition:0.1s;
+    background-color: white;
+}
+#thirdside button:hover{
+    transition:0.1s;
+    background-color: rgb(231, 228, 228);
+    width:142px;
+    height:32px;
+    cursor: pointer;
+}
+#fourthside{
+    margin-top: 30px;   
+    display: flex;
+    align-items: center;
+    gap:20px;
+    padding:0px 20px;
+}
+#fourthside a{
+    text-decoration: none;
+    color:rgb(159, 158, 158);
+    font-size:13px;
+}
+#fifthside{
+    margin-top: 10px;   
+    display: flex;
+    align-items: center;
+    gap:20px;
+    padding:0px 20px;
+}
+#fifthside a{
+    text-decoration: none;
+    color:rgb(159, 158, 158);
+    font-size:13px;
+}
+#sixthside{
+    margin-top: 10px;   
+    display: flex;
+    align-items: center;
+    gap:20px;
+    padding:0px 20px;
+}
+#sixthside a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size:14px;
+    transition:0.1s;
+}
+#sixthside a:hover{
+    transition:0.1s;
+    text-decoration: underline;
+}
+#seventhside{
+    margin-top: 30px;
+    border:1px solid white;
+    width:100px;
+    height:35px;
+    text-align: center;
+    padding:5px 15px;
+    color:white;
+    font-size:13px;
+    transition:0.1s;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    gap:3px;
+    border-radius: 20px;
+    transition:0.1s;
+    font-weight: bold;
+}
+#seventhside:hover{
+    transition:0.1s;
+    border:2px solid white;
+    width:102px;
+    height:38px;
+    cursor: pointer;
+}
+#seventhside i{
+    font-size:20px;
+    font-weight: none;
+}
+#main{
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+#content{
+    background: linear-gradient(rgb(36, 36, 36),rgb(19, 19, 19),rgb(19, 19, 19));
+    width:100%;
+    height:600px;
+    margin-top:-180px;
+    padding:10px 20px;
+    border-radius: 10px;
+    transition:0.1s;
+    margin-top: 10px;
+}
+#content h1{
+    color:white;
+    font-size:25px;
+    transition:0.1s;
+}
+#content h1:hover{
+    transition:0.1s;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#fc{
+    background: transparent;
+    width:100%;
+    height:300px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+#card{
+    width:170px;
+    padding:10px 10px;
+    border-radius: 10px;
+    transition:0.1s;
+    height:250px;
+    margin-top: -40px;
+}
+#card:hover{
+    transition:0.1s;
+    background: linear-gradient(rgb(36, 36, 36),rgb(26, 26, 26),rgb(31, 31, 31));
+    cursor: pointer;
+}
+#card img{
+    margin-top: 10px;
+    width:150px;
+    height:150px;
+    border-radius: 100px;
+}
+#card h5{
+    margin-top: 5px;
+    color:white;
+    font-size:15px;
+    transition:0.1s;
+    margin-left: 4px;
+}
+#card h5:hover{
+    transition:0.1s;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#card h6{
+    margin-left: 4px;
+    margin-top: 5px;
+    font-size:13px;
+    color:rgb(158, 157, 157);
+}
+#message{
+    display: flex;
+    align-items: center;
+    gap:670px;
+}
+#message a{
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(178, 177, 177);
+    font-size:13px;
+    transition:0.1s;
+}
+#message a:hoveR{
+    transition:0.1s;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#message2{
+    display: flex;
+    align-items: center;
+    gap:550px;
+    margin-top: -30px;
+}
+#message2 h1{
+    font-size:22px;
+}
+#message2 a{
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(178, 177, 177);
+    font-size:13px;
+    transition:0.1s;
+}
+#message2 a:hoveR{
+    transition:0.1s;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#fc2{
+    width:100%;
+    height:250px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+#card2{
+    width:170px;
+    height:250px;
+    padding:10px 9px;
+    margin-top: 5px;
+    border-radius: 10px;
+    transition:0.1s;
+}
+#card2 img{
+    width:150px;
+    height:150px;
+    border-radius: 5px;
+}
+#card2 h5{
+    margin-top: 5px;
+    color:white;
+    font-size:15px;
+    transition:0.1s;
+    margin-left: 4px;
+}
+#card2 h5:hover{
+    transition:0.1s;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#card2 h6{
+    margin-left: 4px;
+    margin-top: 5px;
+    font-size:13px;
+    color:rgb(158, 157, 157);
+    transition:0.1s;
+}
+#card2:hover{
+    transition:0.1s;
+    transition:0.1s;
+    background:rgb(28, 28, 28);
+    cursor: pointer;
+}
+#card2 h6:hover{
+    transition:0.1s;
+    text-decoration: underline;
+}
