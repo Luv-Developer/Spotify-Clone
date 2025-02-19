@@ -166,13 +166,14 @@ html , body{
     font-size:16px;
     cursor: pointer;
 }
-#signup{
+#signup a{
     color:rgb(192, 190, 190);
     font-size:14px;
     font-weight: bold;
     transition:0.1s;
+    text-decoration: none;
 }
-#signup:hover{
+#signup a:hover{
     transition:0.1s;
     color:white;
     font-size:15px;

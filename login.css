@@ -1,0 +1,315 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html , body{
+    width:100%;
+    height:127%;
+    background:linear-gradient(rgb(29, 29, 29),rgb(29, 29, 29),black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main{
+    margin-top: 250px;
+    margin-bottom: 150px;
+    padding:20px 20px;
+    background-color: rgb(20, 19, 19);
+    width:50%;
+    height:800px;
+    border-radius: 10px;
+}
+#logo{
+    margin-left: 280px;
+    width:45px;
+    height:40px;
+    margin-top: 10px;
+}
+#logo i{
+    font-size:45px;
+    color:white;
+    transition:0.1s;
+}
+#logo i:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#heading{
+    margin-left: 170px;
+    margin-top: 10px;
+    width:300px;
+    height:50px;
+    font-size: 35px;
+    font-weight: bold;
+    color:white;
+}
+#box{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap:35px;
+    border:1px solid rgb(132, 131, 131);
+    width:350px;
+    height:50px;
+    padding:10px 30px;
+    margin-left: 130px;
+    border-radius: 40px;
+    transition:0.1s;
+}
+#box:hover{
+    transition:0.1s;
+    cursor: pointer;
+    border:1px solid white;
+}
+#box i{
+    font-size:28px;
+    color:white;
+    transition:0.1s;
+}
+#box i:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#box label{
+    color:white;
+    font-weight: bold;
+    font-size:16px;
+    transition:0.1s;
+}
+#box label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#box2{
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    gap:30px;
+    border:1px solid rgb(132, 131, 131);
+    width:350px;
+    height:50px;
+    padding:10px 30px;
+    margin-left: 130px;
+    border-radius: 40px;
+    transition:0.1s;
+}
+#box2:hover{
+    transition:0.1s;
+    cursor: pointer;
+    border:1px solid white;
+}
+#box2 i{
+    font-size:28px;
+    color:white;
+    transition:0.1s;
+}
+#box2 i:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#box2 label{
+    color:white;
+    font-weight: bold;
+    font-size:16px;
+    transition:0.1s;
+}
+#box2 label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#box3{
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    gap:30px;
+    border:1px solid rgb(132, 131, 131);
+    width:350px;
+    height:50px;
+    padding:10px 30px;
+    margin-left: 130px;
+    border-radius: 40px;
+    transition:0.1s;
+}
+#box3:hover{
+    transition:0.1s;
+    cursor: pointer;
+    border:1px solid white;
+}
+#box3 i{
+    font-size:28px;
+    color:white;
+    transition:0.1s;
+}
+#box3 i:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#box3 label{
+    color:white;
+    font-weight: bold;
+    font-size:16px;
+    transition:0.1s;
+    margin-left: 20px;
+}
+#box3 label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#box4{
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    gap:35px;
+    border:1px solid rgb(132, 131, 131);
+    width:350px;
+    height:50px;
+    padding:10px 30px;
+    margin-left: 130px;
+    border-radius: 40px;
+    transition:0.1s;
+}
+#box4:hover{
+    transition:0.1s;
+    cursor: pointer;
+    border:1px solid white;
+}
+#box4 label{
+    color:white;
+    font-weight: bold;
+    font-size:16px;
+    transition:0.1s;
+    margin-left: 30px;
+}
+#box4 label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#line{
+    margin-top: 40px;
+    width:500px;
+    height:1px;
+    background-color:rgb(59, 59, 59);
+    color:white;
+    margin-left: 55px;
+}
+#input1{
+    margin-top: 20px;
+    width:350px;
+    margin-left: 130px;
+}
+#input1 label{
+    color:white;
+    font-size:16px;
+    font-weight: bold;
+}
+#input1 input{
+    margin-top: 7px;
+    width:100%;
+    height:50px;
+    padding:10px 10px;
+    background: transparent;
+    outline: none;
+    color:white;
+    border-radius: 5px;
+    border:1px solid rgb(132, 131, 131);
+    transition:0.1s;
+    font-size: 15px;
+}
+#input1 input:hover{
+    transition:0.1s;
+    border:1px solid white;
+}
+#input1 input::placeholder{
+    color:rgb(165, 164, 164);
+    font-size: 17px;
+}
+#input2{
+    margin-top: 20px;
+    width:350px;
+    margin-left: 130px;
+}
+#input2 label{
+    color:white;
+    font-size:16px;
+    font-weight: bold;
+}
+#input2 input{
+    margin-top: 3px;
+    width:90%;
+    height:50px;
+    padding:10px 10px;
+    background: transparent;
+    outline: none;
+    color:white;
+    border:none;
+    transition:0.1s;
+    font-size:15px;
+}
+#input2 input:hover{
+    transition:0.1s;
+    border:none;
+    outline: none;
+}
+#input2 input::placeholder{
+    color:rgb(165, 164, 164);
+    font-size: 17px;
+}
+#inputbox{
+    margin-top: 8px;
+    border:1px solid rgb(132, 131, 131);
+    height:53px;
+    border-radius: 5px;
+    transition:0.1s;
+}
+#inputbox:hover{
+    transition:0.1s;
+    border:1px solid white;
+}
+#inputbox i{
+    color:white;
+    transition:0.1s;
+}
+#inputbox i:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#btn{
+    margin-left: 135px;
+    margin-top: 30px;
+    width:340px;
+    height:50px;
+    border-radius: 40px;
+    border:transparent;
+    background-color: rgb(77, 221, 77);
+    font-weight: bold;
+    font-size: 17px;
+    transition:0.1s;
+}
+#btn:hover{
+    transition:0.1s;
+    cursor: pointer;
+    background-color: rgb(93, 228, 93);
+}
+#info{
+    margin-top: 30px;
+    margin-left: 105px;
+    width:400px;
+    height:40px;
+    text-align: center;
+}
+#info label{
+    color:rgb(177, 173, 173);
+    font-size:16px;
+}
+#info label a{
+    margin-left: 5px;
+    color:white;
+    transition:0.1s;
+}
+#info label a:hover{
+    transition:0.1s;
+    cursor: pointer;
+    color:rgb(77, 221, 77);
+}

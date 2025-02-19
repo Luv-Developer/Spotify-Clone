@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel = "stylesheet" type = "text/css" href = "login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id = "main">
+        <div id = "logo">
+        <a href = "/"><i class='bx bxl-spotify'></i></a>
+        </div>
+        <div id = "heading">
+            <label>Log in to Spotify</label>
+        </div>
+        <div id = "box">
+            <i class='bx bxl-google'></i><label>Continue with Google</label>
+        </div>
+        <div id = "box2">
+            <i class='bx bxl-facebook-circle'></i><label>Continue with Facebook</label>
+        </div>
+        <div id = "box3">
+            <i class='bx bxl-apple' ></i><label>Continue with Apple</label>
+        </div>
+        <div id = "box4">
+            <label>Continue with phone number</label>
+        </div>
+        <div id = "line"></div>
+        <div id = "input1">
+            <label>Email</label><br>
+            <input type = "text" placeholder="Email" name = "email">
+        </div>
+        <div id = "input2">
+            <label>Password</label><br>
+            <div id = "inputbox">
+            <input id = "pass" type = "password" placeholder="Password" name = "password"><i id = "eye" class='bx bx-low-vision'></i> 
+            </div>
+        </div>
+        <button id = "btn">Log in</button>
+        <div id = "info">
+            <label>Don't have an account? <a href = "/signup">Sign up for Spotify.</a></label>
+        </div>
+    </div>
+    <script src = "login.js"></script>
+</body>
+</html>

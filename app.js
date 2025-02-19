@@ -22,6 +22,27 @@ const supabase = createClient(supabaseurl,supabasekey)
 app.get("/",(req,res)=>{
     res.render("spotify")
 })
+app.get("/signup",(req,res)=>{
+    res.render("signup")
+})
+app.post("/signup",async(req,res)=>{
+    const {email,password} = req.body
+    const saltround = await bcrypt.genSalt(10)
+    const hashedpassword = await bcrypt.hash(password,saltround)
+    const user = await supabase
+    .from("users2")
+    .insert([{email:email,password_hash:hashedpassword}])
+    .select()
+    const token = jwt.sign({email},"hehe")
+    res.cookie("token",token)
+    res.send("Data Saved")
+})
+app.get("/login",(req,res)=>{
+    res.render("login")
+})
+app.post("/login",(req,res)=>{
+    
+})
 app.listen(port,()=>{
     console.log(`App is listening at ${port}`)
 })
