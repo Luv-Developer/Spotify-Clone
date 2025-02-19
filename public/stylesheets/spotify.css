@@ -193,6 +193,10 @@ html , body{
     margin-left: 8px;
     transition:0.1s;
 }
+#login a{
+    text-decoration: none;
+    color:black;
+}
 #login:hover{
     transition:0.1s;
     background-color: rgb(230, 227, 227);

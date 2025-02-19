@@ -33,15 +33,39 @@ app.post("/signup",async(req,res)=>{
     .from("users2")
     .insert([{email:email,password_hash:hashedpassword}])
     .select()
+    if(user){
     const token = jwt.sign({email},"hehe")
     res.cookie("token",token)
-    res.send("Data Saved")
+    res.redirect("/login")
+    }
+    else{
+        res.redirect("/signup")
+    }
 })
 app.get("/login",(req,res)=>{
     res.render("login")
 })
-app.post("/login",(req,res)=>{
-    
+app.post("/login",async(req,res)=>{
+    const {password,email} = req.body
+    const {data:user} = await supabase
+    .from("users2") // will go in inside the users2 table 
+    .select("*") // will select all the records inside the table 
+    .eq("email",email) // will checkt the email
+    .single() 
+    if(user){
+        const passwordvalid = await bcrypt.compare(password,user.password_hash)
+        if(!passwordvalid){
+            return res.redirect("/login")
+        }
+        else{
+            let token = jwt.sign({email},"hehe")
+            res.cookie("token",token)
+            return res.redirect("/")
+        }
+    }
+    else{
+        res.redirect("/signup")
+    }
 })
 app.listen(port,()=>{
     console.log(`App is listening at ${port}`)
